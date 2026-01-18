@@ -69,8 +69,8 @@ body { margin: 0; font-family: system-ui,-apple-system, Segoe UI, Roboto, Ubuntu
 .stream-player { position: relative; padding-top: 56.25%; }
 .stream-player iframe { position: absolute; inset: 0; width: 100%; height: 100%; }
 .side-panel { display: none; align-items: center; justify-content: center; }
-.side-panel.left { background: var(--color-surface); }
-.side-panel.right { background: var(--color-bg); }
+.side-panel.left { background: var(--color-bg); }
+.side-panel.right { background: var(--color-bg); margin-right: 50px; }
 @media (min-width: 900px) {
   .stream-layout { grid-template-columns: 140px minmax(0,1fr) 140px; min-height: calc(100vh - 64px - 48px); }
   .side-panel { display: flex; }

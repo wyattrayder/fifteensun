@@ -24,11 +24,14 @@ const twitchSrc = computed(() => {
 </template>
 
 <style scoped>
-.stream-player { padding: 24px 12px; }
-.player-inner { position: relative; width: 100%; max-width: 960px; margin: 0 auto; padding-top: 56.25%; }
+.stream-layout { display: grid; grid-template-columns: 1fr; justify-items: center; align-items: center; overflow-x: hidden; }
+.side-panel { display: none; }
+.stream-player { padding: 24px 12px; width: 100%; }
+.player-inner { position: relative; width: min(100%, 960px); aspect-ratio: 16 / 9; margin: 0 auto; }
 .player-inner iframe { position: absolute; inset: 0; width: 100%; height: 100%; border-radius: 12px; }
 
 @media (min-width: 900px) {
-  :deep(.stream-layout) { grid-template-columns: 120px minmax(0,1fr) 120px; }
+  .stream-layout { grid-template-columns: 120px minmax(0,1fr) 120px; }
+  .side-panel { display: flex; align-items: center; justify-content: center; }
 }
 </style>

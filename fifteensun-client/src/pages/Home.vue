@@ -13,7 +13,7 @@
       <div class="brand-lockup">
         <img :src="'/assets/logos/fifteensun.png'" alt="FifteenSun Logo" class="brand-logo" />
       </div>
-      <h1 class="slogan">Playing Games. Saving Lives.</h1>
+      <h1 class="slogan">Playing Games. <br/> Saving Lives.</h1>
       <!-- <div class="cta-row">
         <a class="btn btn-primary" href="https://twitch.tv/fifteensun" target="_blank">Watch on Twitch</a>
         <a class="btn btn-secondary" href="https://www.extra-life.org/participant/FifteenSun" target="_blank">Donate to Extra Life</a>
