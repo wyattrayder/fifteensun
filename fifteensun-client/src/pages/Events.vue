@@ -45,7 +45,6 @@
 h1 { font-size: clamp(2.4rem, 3.6vw, 3.2rem); line-height: 1.15; margin: 0 0 12px; }
 .lead { font-size: 1.25rem; line-height: 1.8; }
 p { font-size: 1.125rem; line-height: 1.9; }
-.
 .actions { margin-top: 12px; }
 .btn { font-size: 1.0625rem; padding: 12px 18px; }
 
