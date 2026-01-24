@@ -14,7 +14,7 @@
           Add the calendar to your own schedule to stay in the loop and feel free to swing by live when you see a stream planned!
         </p>
         <div class="actions">
-          <a class="btn btn-secondary" href="#calendar">View Calendar</a>
+          <router-link class="btn btn-secondary" :to="{ hash: '#calendar' }">View Calendar</router-link>
         </div>
       </div>
       <img class="hero-image" src="/assets/logos/FifteenSun-2024.png" alt="FifteenSun 2024" />

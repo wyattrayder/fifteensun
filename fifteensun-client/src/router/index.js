@@ -14,6 +14,18 @@ const router = createRouter({
     { path: '/stream', name: 'stream', component: Stream, meta: { title: 'Stream' } },
     { path: '/events', name: 'events', component: Events, meta: { title: 'Events' } },
   ],
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    }
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: 'smooth',
+      }
+    }
+    return { top: 0 }
+  },
 })
 
 // Update document title on navigation

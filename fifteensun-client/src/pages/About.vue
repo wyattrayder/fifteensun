@@ -16,8 +16,8 @@
           to hang out on Twitch or to donate — thank you for being part of the journey!
         </p>
         <div class="actions">
-          <a class="btn btn-primary" href="#about-extralife">About ExtraLife</a>
-          <a class="btn btn-secondary" href="#progress">2026 Progress</a>
+          <router-link class="btn btn-primary" :to="{ hash: '#about-extralife' }">About ExtraLife</router-link>
+          <router-link class="btn btn-secondary" :to="{ hash: '#progress' }">2026 Progress</router-link>
         </div>
       </div>
       <img class="hero-image" src="/assets/logos/fifteensun-extralife.png" alt="FifteenSun logo with Extra Life branding" />
