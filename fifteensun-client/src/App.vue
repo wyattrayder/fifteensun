@@ -16,6 +16,7 @@ const mobileOpen = ref(false)
         <router-link to="/about">About</router-link>
         <router-link to="/events">Events</router-link>
         <router-link to="/photos">Photos</router-link>
+        <router-link to="/merch">Merch</router-link>
         <router-link to="/stream">Stream</router-link>
       </nav>
       <button
@@ -32,6 +33,7 @@ const mobileOpen = ref(false)
       <router-link to="/about" @click="mobileOpen=false">About</router-link>
       <router-link to="/events" @click="mobileOpen=false">Events</router-link>
       <router-link to="/photos" @click="mobileOpen=false">Photos</router-link>
+      <router-link to="/merch" @click="mobileOpen=false">Merch</router-link>
       <router-link to="/stream" @click="mobileOpen=false">Stream</router-link>
     </div>
   </header>
@@ -48,7 +50,7 @@ const mobileOpen = ref(false)
 </template>
 
 <style scoped>
-.header { position: sticky; top: 0; z-index: 1000; background: transparent; }
+.header { position: sticky; top: 0; z-index: 1000; background: #EEF0EF; }
 .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 16px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; }
 .brand img { height: 32px; width: 32px; object-fit: contain; }
@@ -63,6 +65,8 @@ const mobileOpen = ref(false)
 .mobile-menu { position: absolute; left: 0; right: 0; top: 100%; background: #ffffff; color: #222; display: flex; flex-direction: column; gap: 6px; padding: 10px 16px 14px; border-bottom: 1px solid rgba(0,0,0,0.06); box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
 .mobile-menu a { padding: 10px 12px; border-radius: 8px; }
 .mobile-menu a.router-link-active { background: rgba(0,0,0,0.04); }
+
+.footer { position: fixed; bottom: 0; left: 0; right: 0; z-index: 999; background: #fff; border-top: 1px solid rgba(0,0,0,0.06); }
 
 @media (min-width: 768px) {
   .nav { display: inline-flex; }

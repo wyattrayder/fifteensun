@@ -33,7 +33,7 @@ body { margin: 0; font-family: system-ui,-apple-system, Segoe UI, Roboto, Ubuntu
   .mobile-menu a { display: block; padding: 12px 16px; text-decoration: none; color: inherit; }
 }
 
-.main { min-height: calc(100vh - 64px - 48px); }
+.main { min-height: calc(100vh - 64px - 48px); padding-bottom: 48px; }
 .footer { background: var(--color-surface); border-top: 1px solid rgba(0,0,0,0.08); }
 .footer .wrap { max-width: 1100px; margin: 0 auto; padding: 12px 16px; display: flex; justify-content: space-between; font-size: 12px; }
 

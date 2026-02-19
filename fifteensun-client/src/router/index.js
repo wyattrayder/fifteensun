@@ -4,6 +4,7 @@ import About from '@/pages/About.vue'
 import Photos from '@/pages/Photos.vue'
 import Stream from '@/pages/Stream.vue'
 import Events from '@/pages/Events.vue'
+import Merch from '@/pages/Merch.vue'
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -13,6 +14,7 @@ const router = createRouter({
     { path: '/photos', name: 'photos', component: Photos, meta: { title: 'Photos' } },
     { path: '/stream', name: 'stream', component: Stream, meta: { title: 'Stream' } },
     { path: '/events', name: 'events', component: Events, meta: { title: 'Events' } },
+    { path: '/merch', name: 'merch', component: Merch, meta: { title: 'Merch' } },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
